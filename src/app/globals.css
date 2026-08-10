@@ -1,0 +1,152 @@
+@import "tailwindcss";
+
+:root {
+  --navy: #001a33;
+  --navy-deep: #000e1c;
+  --royal: #1c4a7a;
+  --royal-bright: #2a5f96;
+  --sky: #a8c4df;
+  --champagne: #c4a574;
+  --champagne-soft: #dfc9a8;
+  --mist: #eef2f6;
+  --foam: #f8fafc;
+  --ink: #0a1628;
+  --muted: #6b7c8f;
+  --line: rgba(0, 26, 51, 0.08);
+  --surface: #ffffff;
+  --background: #c9d4e3;
+  --foreground: #0a1628;
+  --success: #1a6b45;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-navy: var(--navy);
+  --color-navy-deep: var(--navy-deep);
+  --color-royal: var(--royal);
+  --color-royal-bright: var(--royal-bright);
+  --color-sky: var(--sky);
+  --color-champagne: var(--champagne);
+  --color-champagne-soft: var(--champagne-soft);
+  --color-mist: var(--mist);
+  --color-foam: var(--foam);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-surface: var(--surface);
+  --color-success: var(--success);
+  --font-sans: var(--font-plus-jakarta);
+  --font-display: var(--font-fraunces);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #c5d0e0;
+}
+
+/* Premium canvas — no fixed attachment / no backdrop-blur (scroll jank) */
+body {
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100%;
+  background-color: #c5d0e0;
+  background-image:
+    radial-gradient(ellipse 100% 70% at -8% -15%, rgba(28, 74, 122, 0.5), transparent 55%),
+    radial-gradient(ellipse 85% 60% at 108% 0%, rgba(196, 165, 116, 0.34), transparent 50%),
+    radial-gradient(ellipse 70% 55% at 50% 105%, rgba(0, 26, 51, 0.18), transparent 58%),
+    linear-gradient(155deg, #dce5f0 0%, #b8c6d8 42%, #cfd9e8 72%, #aebccd 100%);
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(0, 26, 51, 0.1) 1px, transparent 1px);
+  background-size: 22px 22px;
+  opacity: 0.55;
+}
+
+body > * {
+  position: relative;
+  z-index: 1;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--champagne) 28%, white);
+  color: var(--navy);
+}
+
+.bg-atmosphere {
+  position: relative;
+  isolation: isolate;
+  background: transparent;
+}
+
+.section-pad {
+  padding-block: 5.5rem;
+}
+
+@media (min-width: 640px) {
+  .section-pad {
+    padding-block: 7.5rem;
+  }
+}
+
+.bg-platinum {
+  position: relative;
+  isolation: isolate;
+  background-color: #d2deec;
+  background-image:
+    radial-gradient(900px 480px at 10% -15%, rgba(28, 74, 122, 0.2), transparent 55%),
+    radial-gradient(720px 400px at 100% 30%, rgba(196, 165, 116, 0.16), transparent 50%),
+    linear-gradient(180deg, #ecf2f8 0%, #c6d6e8 50%, #e4ecf5 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.7),
+    inset 0 -1px 0 rgba(0, 26, 51, 0.05);
+}
+
+.bg-platinum::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(15, 23, 42, 0.08) 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.65;
+}
+
+.bg-platinum > * {
+  position: relative;
+  z-index: 1;
+}
+
+.bg-dot-grid {
+  background-image: radial-gradient(rgba(15, 23, 42, 0.08) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.bg-section-soft {
+  position: relative;
+  isolation: isolate;
+  background-color: #e4ebf4;
+  background-image:
+    radial-gradient(720px 340px at 50% 0%, rgba(28, 74, 122, 0.12), transparent 70%),
+    linear-gradient(180deg, #f4f7fb, #d6e2f0);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
+}
+
+.text-balance {
+  text-wrap: balance;
+}

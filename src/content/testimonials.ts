@@ -1,0 +1,58 @@
+import type { Testimonial } from "@/types/service";
+
+export const testimonials: Testimonial[] = [
+  {
+    id: "1",
+    name: "Ayşe Yılmaz",
+    location: "Çorlu",
+    rating: 5,
+    text: "Halılarımız tertemiz geldi. Leke konusunda gerçekten iddialılar. Servis de zamanında ve çok özenliydi.",
+    dateLabel: "2 hafta önce",
+    initials: "AY",
+  },
+  {
+    id: "2",
+    name: "Mehmet Demir",
+    location: "Ergene",
+    rating: 5,
+    text: "Ücretsiz alım-teslimat çok pratik. İletişim net, sürpriz yok. Kesinlikle tavsiye ederim.",
+    dateLabel: "1 ay önce",
+    initials: "MD",
+  },
+  {
+    id: "3",
+    name: "Zeynep Kaya",
+    location: "Çorlu",
+    rating: 5,
+    text: "El dokuma halımı özel yıkadılar, renkleri hiç solmadı. Viva farkı gerçekten hissediliyor.",
+    dateLabel: "3 hafta önce",
+    initials: "ZK",
+  },
+  {
+    id: "4",
+    name: "Ali Çetin",
+    location: "Tekirdağ",
+    rating: 5,
+    text: "Koltuklarımız yerinde temizlendi, koku tamamen gitti. Profesyonel ve güler yüzlü ekip.",
+    dateLabel: "1 hafta önce",
+    initials: "AÇ",
+  },
+  {
+    id: "5",
+    name: "Elif Arslan",
+    location: "Ergene",
+    rating: 5,
+    text: "Perde ve yorganlarımızı da yıkattık. Paketleme bile çok titiz. Tekrar tercih edeceğiz.",
+    dateLabel: "2 ay önce",
+    initials: "EA",
+  },
+  {
+    id: "6",
+    name: "Burak Şahin",
+    location: "Çorlu",
+    rating: 5,
+    text: "Randevu kolay, iletişim net. Halılar yeni gibi oldu. Google üzerinden de yüksek puanları hak ediyorlar.",
+    dateLabel: "3 ay önce",
+    initials: "BŞ",
+  },
+];
