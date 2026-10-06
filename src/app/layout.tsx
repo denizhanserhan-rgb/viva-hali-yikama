@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Fraunces, Plus_Jakarta_Sans } from "next/font/google";
+import { FloatingWhatsApp } from "@/components/layout/FloatingWhatsApp";
 import { Footer } from "@/components/layout/Footer";
 import { MobileCTABar } from "@/components/layout/MobileCTABar";
 import { Navbar } from "@/components/layout/Navbar";
@@ -64,6 +65,7 @@ export default function RootLayout({
         <main className="relative flex-1 pb-24 md:pb-0">{children}</main>
         <Footer />
         <MobileCTABar />
+        <FloatingWhatsApp />
       </body>
     </html>
   );
