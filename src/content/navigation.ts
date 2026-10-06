@@ -1,6 +1,9 @@
 export const mainNav = [
   { href: "/", label: "Ana Sayfa" },
   { href: "/hizmetler", label: "Hizmetler" },
+  { href: "/bolgeler", label: "Bölgeler" },
+  { href: "/galeri", label: "Galeri" },
+  { href: "/blog", label: "Blog" },
   { href: "/hakkimizda", label: "Hakkımızda" },
   { href: "/iletisim", label: "İletişim" },
 ] as const;
@@ -13,9 +16,17 @@ export const footerNav = {
     { href: "/hizmetler/el-dokuma-antika-hali", label: "El Dokuma / Antika" },
     { href: "/hizmetler/yorgan-battaniye", label: "Yorgan & Battaniye" },
   ],
+  regions: [
+    { href: "/bolgeler/corlu", label: "Çorlu Halı Yıkama" },
+    { href: "/bolgeler/ergene", label: "Ergene Halı Yıkama" },
+    { href: "/bolgeler/cerkezkoy", label: "Çerkezköy Halı Yıkama" },
+    { href: "/bolgeler/kapakli", label: "Kapaklı Halı Yıkama" },
+  ],
   company: [
     { href: "/hakkimizda", label: "Hakkımızda" },
-    { href: "/hizmetler", label: "Hizmetler" },
-    { href: "/iletisim", label: "Randevu Al" },
+    { href: "/galeri", label: "Galeri" },
+    { href: "/blog", label: "Blog" },
+    { href: "/servis-cagir", label: "Servis Çağır" },
+    { href: "/iletisim", label: "İletişim" },
   ],
 } as const;

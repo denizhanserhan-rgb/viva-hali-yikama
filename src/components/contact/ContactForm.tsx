@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 import { Select } from "@/components/ui/Select";
 import { services } from "@/content/services";
-import { buildWhatsAppUrl } from "@/lib/whatsapp";
+import { PHONE_PATTERN, PHONE_TITLE, buildWhatsAppUrl } from "@/lib/whatsapp";
 
 export function ContactForm() {
   const [name, setName] = useState("");
@@ -64,6 +64,10 @@ export function ContactForm() {
             name="phone"
             type="tel"
             required
+            autoComplete="tel"
+            inputMode="tel"
+            pattern={PHONE_PATTERN}
+            title={PHONE_TITLE}
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             placeholder="05xx xxx xx xx"

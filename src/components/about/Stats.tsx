@@ -3,7 +3,7 @@ import { Reveal } from "@/components/ui/Reveal";
 
 const stats = [
   { value: "100%", label: "Hijyen odaklı süreç" },
-  { value: "4.9", label: "Google puanı" },
+  { value: "4 ilçe", label: "Ücretsiz servis bölgesi" },
   { value: "0 ₺", label: "Servis ücreti" },
   { value: "4", label: "Adımda teslimat" },
 ];

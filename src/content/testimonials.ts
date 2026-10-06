@@ -51,7 +51,7 @@ export const testimonials: Testimonial[] = [
     name: "Burak Şahin",
     location: "Çorlu",
     rating: 5,
-    text: "Randevu kolay, iletişim net. Halılar yeni gibi oldu. Google üzerinden de yüksek puanları hak ediyorlar.",
+    text: "Randevu kolay, iletişim net. Halılar yeni gibi oldu. Çevremize de tavsiye ettik.",
     dateLabel: "3 ay önce",
     initials: "BŞ",
   },

@@ -27,7 +27,7 @@ export function Testimonials() {
             eyebrow="Müşteri Yorumları"
             eyebrowPill
             title="Memnuniyet bizim en güçlü referansımız"
-            description="Gerçek müşteri deneyimleri ve Google puanımız ile güvenin görünür hali."
+            description="Müşterilerimizin deneyimleri; tüm yorumlara Google üzerinden ulaşabilirsiniz."
           />
         </motion.div>
 
@@ -44,17 +44,15 @@ export function Testimonials() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 rounded-full border border-slate-100 bg-white/85 px-5 py-3 shadow-sm backdrop-blur-sm transition hover:-translate-y-0.5"
           >
-            <div className="flex items-center gap-0.5 text-champagne">
-              {Array.from({ length: 5 }).map((_, i) => (
-                <Star key={i} className="h-4 w-4 fill-current" strokeWidth={1.5} />
-              ))}
-            </div>
+            <span className="flex h-9 w-9 items-center justify-center rounded-full bg-navy text-champagne">
+              <Star className="h-4 w-4 fill-current" strokeWidth={1.5} />
+            </span>
             <div className="text-left">
               <p className="text-sm font-semibold text-navy">
-                Google {site.google.rating} / 5
+                Google yorumlarımız
               </p>
               <p className="text-xs text-muted">
-                {site.google.reviewCount}+ değerlendirme · İncelemek için tıklayın
+                Tüm değerlendirmeleri Google Haritalar’da inceleyin
               </p>
             </div>
           </a>

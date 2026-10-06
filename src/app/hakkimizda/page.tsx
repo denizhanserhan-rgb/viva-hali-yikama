@@ -15,7 +15,8 @@ import { buildTelHref } from "@/lib/whatsapp";
 export const metadata: Metadata = {
   title: "Hakkımızda",
   description:
-    "VİVA HALI YIKAMA: hijyen, zamanında teslimat ve doğa dostu ürünlerle premium temizlik.",
+    "VİVA HALI YIKAMA: Ergene’deki tesisimizden Çorlu ve çevresine hijyen, zamanında teslimat ve doğa dostu ürünlerle premium temizlik.",
+  alternates: { canonical: "/hakkimizda" },
 };
 
 export default function AboutPage() {
@@ -43,16 +44,19 @@ export default function AboutPage() {
         <Container>
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             <Reveal>
-              <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-slate-100 bg-navy shadow-[0_30px_60px_-36px_rgba(0,26,51,0.35)]">
+              <figure className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-slate-100 bg-navy shadow-[0_30px_60px_-36px_rgba(0,26,51,0.35)]">
                 <Image
-                  src="/logo/viva-logo.png"
-                  alt="Viva Halı Yıkama tesis"
+                  src="/images/galeri/viva-hali-yikama-ekibi.jpg"
+                  alt="Viva Halı Yıkama ekibi, halı dolu servis araçlarının önünde"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 560px"
                   priority
                 />
-              </div>
+                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy-deep/85 to-transparent px-6 pb-5 pt-14 text-sm text-white/90">
+                  Viva ekibi sahada — kapıdan alım, kapıya teslim
+                </figcaption>
+              </figure>
             </Reveal>
             <Reveal delay={0.08}>
               <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-champagne">

@@ -18,8 +18,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const service = getServiceBySlug(slug);
   if (!service) return {};
   return {
-    title: service.seoTitle,
+    title: { absolute: service.seoTitle },
     description: service.seoDescription,
+    alternates: { canonical: `/hizmetler/${service.slug}` },
   };
 }
 

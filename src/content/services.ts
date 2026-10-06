@@ -85,9 +85,9 @@ export const services: Service[] = [
     featured: true,
     badge: "En Çok Tercih Edilen",
     icon: "carpet",
-    seoTitle: "Halı Yıkama | VİVA HALI YIKAMA",
+    seoTitle: "Çorlu Halı Yıkama Fabrikası | Tesis Yıkama | VİVA",
     seoDescription:
-      "Profesyonel tesis halı yıkama: derin temizlik, leke müdahalesi, hijyen garantisi ve ücretsiz servis. Zamanında teslimat.",
+      "Çorlu ve Ergene’de tesis halı yıkama: derin temizlik, leke müdahalesi, hijyen garantisi ve ücretsiz servis. Zamanında teslimat.",
   },
   {
     slug: "koltuk-yikama",
@@ -170,7 +170,7 @@ export const services: Service[] = [
     ],
     hint: "Ücretsiz keşif & randevu",
     icon: "sofa",
-    seoTitle: "Koltuk Yıkama | VİVA HALI YIKAMA",
+    seoTitle: "Çorlu Koltuk Yıkama | Yerinde Temizlik | VİVA",
     seoDescription:
       "Profesyonel koltuk yıkama: yerinde temizlik, koku giderme, kumaşa özel bakım ve hijyen odaklı sonuç.",
   },
@@ -255,7 +255,7 @@ export const services: Service[] = [
     ],
     hint: "Ücretsiz servis dahil",
     icon: "curtain",
-    seoTitle: "Stor & Perde Yıkama | VİVA HALI YIKAMA",
+    seoTitle: "Çorlu Stor & Perde Yıkama | Söküm–Montaj | VİVA",
     seoDescription:
       "Stor, tül ve kumaş perde yıkama: renk koruma, ütüleme ve montaj desteğiyle profesyonel bakım.",
   },
@@ -340,7 +340,7 @@ export const services: Service[] = [
     ],
     hint: "Özel protokol · randevu",
     icon: "antique",
-    seoTitle: "El Dokuma & Antika Halı Yıkama | VİVA",
+    seoTitle: "Çorlu El Dokuma & Antika Halı Yıkama | VİVA",
     seoDescription:
       "El dokuma ve antika halı yıkama: hassas yöntemler, renk–dokuma koruması ve uzman kalite kontrol.",
   },
@@ -425,7 +425,7 @@ export const services: Service[] = [
     ],
     hint: "Ücretsiz keşif & randevu",
     icon: "blanket",
-    seoTitle: "Yorgan & Battaniye Yıkama | VİVA",
+    seoTitle: "Çorlu Yorgan & Battaniye Yıkama | VİVA",
     seoDescription:
       "Yorgan ve battaniye yıkama: hijyenik temizlik, toz akarı azaltma, kontrollü kurutma ve özenli paketleme.",
   },

@@ -23,26 +23,31 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${site.name} | ${site.tagline}`,
+    default: site.seoTitle,
     template: `%s | ${site.name}`,
   },
   description: site.description,
+  keywords: [
+    "çorlu halı yıkama",
+    "ergene halı yıkama",
+    "çerkezköy halı yıkama",
+    "kapaklı halı yıkama",
+    "çorlu koltuk yıkama",
+    "tekirdağ halı yıkama",
+    "halı yıkama fabrikası çorlu",
+  ],
   openGraph: {
-    title: site.name,
+    title: site.seoTitle,
     description: site.description,
+    url: "/",
     locale: "tr_TR",
     type: "website",
     siteName: site.name,
-    images: [{ url: "/logo/viva-logo.png", width: 512, height: 512, alt: site.name }],
   },
   twitter: {
     card: "summary_large_image",
-    title: site.name,
+    title: site.seoTitle,
     description: site.description,
-    images: ["/logo/viva-logo.png"],
-  },
-  icons: {
-    icon: "/logo/viva-logo.png",
   },
 };
 

@@ -41,7 +41,7 @@ export function Navbar() {
         <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-navy-deep/55 to-transparent" />
       ) : null}
 
-      <Container className="relative flex h-16 items-center justify-between gap-4 sm:h-[4.5rem]">
+      <Container className="relative flex h-16 max-w-7xl items-center justify-between gap-4 sm:h-[4.5rem]">
         <Link
           href="/"
           className="group flex shrink-0 items-center gap-3"
@@ -77,7 +77,7 @@ export function Navbar() {
           </div>
         </Link>
 
-        <nav className="hidden items-center gap-0.5 lg:flex">
+        <nav className="hidden items-center gap-0.5 xl:flex">
           {mainNav.map((item) => {
             const active =
               item.href === "/"
@@ -88,7 +88,7 @@ export function Navbar() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "relative px-3.5 py-2 text-[13px] font-medium tracking-wide transition duration-200",
+                  "relative whitespace-nowrap px-3 py-2 text-[13px] font-medium tracking-wide transition duration-200",
                   active
                     ? "text-white"
                     : "text-white/65 hover:text-white",
@@ -101,7 +101,7 @@ export function Navbar() {
               >
                 {item.label}
                 {active ? (
-                  <span className="absolute inset-x-3.5 bottom-1 h-px bg-gradient-to-r from-transparent via-champagne to-transparent shadow-[0_0_10px_rgba(196,165,116,0.7)]" />
+                  <span className="absolute inset-x-3 bottom-1 h-px bg-gradient-to-r from-transparent via-champagne to-transparent shadow-[0_0_10px_rgba(196,165,116,0.7)]" />
                 ) : null}
               </Link>
             );
@@ -122,24 +122,24 @@ export function Navbar() {
             href={buildTelHref()}
             variant="ghost"
             size="sm"
-            className="border-white/25 bg-white/8 shadow-[0_10px_28px_-14px_rgba(0,0,0,0.55)] hover:border-champagne/40 hover:bg-white/12"
+            className="whitespace-nowrap border-white/25 bg-white/8 shadow-[0_10px_28px_-14px_rgba(0,0,0,0.55)] hover:border-champagne/40 hover:bg-white/12"
           >
             <Phone className="h-4 w-4 text-champagne" strokeWidth={1.5} />
             {site.phoneDisplay}
           </Button>
           <Button
-            href="/iletisim"
+            href="/servis-cagir"
             size="sm"
             variant="champagne"
-            className="shadow-[0_12px_32px_-12px_rgba(196,165,116,0.65)]"
+            className="whitespace-nowrap shadow-[0_12px_32px_-12px_rgba(196,165,116,0.65)]"
           >
-            Randevu Al
+            Servis Çağır
           </Button>
         </div>
 
         <button
           type="button"
-          className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-white/20 bg-white/10 text-white shadow-[0_8px_24px_-12px_rgba(0,0,0,0.5)] backdrop-blur-sm lg:hidden"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-white/20 bg-white/10 text-white shadow-[0_8px_24px_-12px_rgba(0,0,0,0.5)] backdrop-blur-sm xl:hidden"
           aria-label={open ? "Menüyü kapat" : "Menüyü aç"}
           onClick={() => setOpen((v) => !v)}
         >
@@ -148,7 +148,7 @@ export function Navbar() {
       </Container>
 
       {open ? (
-        <div className="border-t border-white/10 bg-navy-deep/95 backdrop-blur-xl lg:hidden">
+        <div className="border-t border-white/10 bg-navy-deep/95 backdrop-blur-xl xl:hidden">
           <Container className="flex flex-col gap-1 py-4">
             {mainNav.map((item) => {
               const active =
@@ -185,8 +185,8 @@ export function Navbar() {
                 <Phone className="h-4 w-4 text-champagne" strokeWidth={1.5} />
                 Hemen Ara
               </Button>
-              <Button href="/iletisim" variant="champagne">
-                Randevu Al
+              <Button href="/servis-cagir" variant="champagne">
+                Servis Çağır
               </Button>
             </div>
           </Container>

@@ -83,10 +83,27 @@ export function Footer() {
             </a>
           </div>
 
-          <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3 lg:gap-16">
+          <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-12">
             <FooterColumn title="Hizmetler">
               <ul className="space-y-3.5">
                 {footerNav.services.map((item) => (
+                  <li key={item.href}>
+                    <Link
+                      href={item.href}
+                      className="group inline-flex items-center gap-2 text-[15px] font-medium tracking-wide text-white/55 transition duration-200 hover:text-white"
+                      style={{ textShadow: "0 4px 16px rgba(0,0,0,0.25)" }}
+                    >
+                      <span className="h-px w-0 bg-champagne transition-all duration-300 group-hover:w-3" />
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </FooterColumn>
+
+            <FooterColumn title="Bölgeler">
+              <ul className="space-y-3.5">
+                {footerNav.regions.map((item) => (
                   <li key={item.href}>
                     <Link
                       href={item.href}

@@ -4,7 +4,8 @@ export const site = {
   tagline: "Temizlikte Viva Farkı!",
   slogan: "Viva ile tertemiz, yenilenmiş bir yaşam!",
   description:
-    "Profesyonel halı, koltuk ve perde yıkama hizmetleri. Ücretsiz servis, hijyen garantisi ve zamanında teslimat.",
+    "Çorlu ve Ergene’de profesyonel halı, koltuk ve perde yıkama. Kendi tesisimizde hijyenik yıkama, ücretsiz servis ve zamanında teslimat.",
+  seoTitle: "Çorlu Halı Yıkama | Ücretsiz Servis | VİVA HALI YIKAMA",
   phone: "0530 031 75 36",
   phoneDisplay: "0530 031 75 36",
   whatsapp: "905300317536",

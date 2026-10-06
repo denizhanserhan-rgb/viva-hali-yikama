@@ -48,6 +48,7 @@ type ButtonAsLink = CommonProps & {
   href: string;
   target?: string;
   rel?: string;
+  "aria-label"?: string;
 };
 
 export function Button({
@@ -65,9 +66,15 @@ export function Button({
   );
 
   if ("href" in props && props.href) {
-    const { href, target, rel } = props;
+    const { href, target, rel, "aria-label": ariaLabel } = props;
     return (
-      <Link href={href} target={target} rel={rel} className={classes}>
+      <Link
+        href={href}
+        target={target}
+        rel={rel}
+        aria-label={ariaLabel}
+        className={classes}
+      >
         {children}
       </Link>
     );

@@ -7,9 +7,10 @@ import { PageHero } from "@/components/ui/PageHero";
 import { Reveal } from "@/components/ui/Reveal";
 
 export const metadata: Metadata = {
-  title: "İletişim & Randevu",
+  title: "İletişim & Randevu | Çorlu – Ergene",
   description:
-    "VİVA HALI YIKAMA ile iletişime geçin. Randevu alın, teklif isteyin. Telefon: 0530 031 75 36",
+    "VİVA HALI YIKAMA iletişim: Cumhuriyet Mah. 1336. Sk. No:10/2, Ergene / Tekirdağ. Çorlu ve çevresine ücretsiz servis. Telefon: 0530 031 75 36",
+  alternates: { canonical: "/iletisim" },
 };
 
 export default function ContactPage() {

@@ -75,11 +75,11 @@ export function Hero() {
           <div className="mt-8 h-px w-12 bg-sky/70" />
 
           <h1 className="mt-7 max-w-md text-balance font-display text-[1.9rem] leading-[1.12] tracking-tight text-white sm:text-[2.5rem]">
-            {site.tagline}
+            Çorlu ve Ergene’de {site.tagline}
           </h1>
           <p className="mt-4 max-w-md text-[15px] leading-relaxed text-white/80 sm:text-base">
-            Endüstriyel tesis yıkama, ücretsiz servis ve zamanında teslimat.
-            Halılarınız yenilenmiş gibi geri döner.
+            Çorlu, Ergene, Çerkezköy ve Kapaklı’da halı yıkama: kendi tesisimizde
+            yıkama, ücretsiz servis ve zamanında teslimat.
           </p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -97,9 +97,9 @@ export function Hero() {
               <MessageCircle className="h-4 w-4" />
               WhatsApp
             </Button>
-            <Button href="/iletisim" size="lg" variant="soft">
+            <Button href="/servis-cagir" size="lg" variant="soft">
               <CalendarCheck className="h-4 w-4" />
-              Randevu Al
+              Servis Çağır
             </Button>
           </div>
 

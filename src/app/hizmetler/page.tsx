@@ -18,9 +18,10 @@ import { Button } from "@/components/ui/Button";
 import { servicesPageContent } from "@/content/about";
 
 export const metadata: Metadata = {
-  title: "Hizmetlerimiz",
+  title: "Hizmetlerimiz | Çorlu Halı, Koltuk ve Perde Yıkama",
   description:
-    "Halı yıkama, koltuk yıkama, stor perde, el dokuma/antika ve yorgan battaniye hizmetleri. Ücretsiz servis ve hijyen garantisi.",
+    "Çorlu ve Ergene’de halı yıkama, koltuk yıkama, stor perde, el dokuma/antika ve yorgan battaniye hizmetleri. Ücretsiz servis ve hijyen garantisi.",
+  alternates: { canonical: "/hizmetler" },
 };
 
 const promiseIcons = [Truck, ShieldCheck, Layers, Sparkles];
